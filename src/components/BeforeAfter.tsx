@@ -48,21 +48,15 @@ const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({
 const BeforeAfter: React.FC = () => {
   const transformations = [
     {
-      title: "Limpeza Residencial Completa",
-      beforeImage: "https://images.pexels.com/photos/4439901/pexels-photo-4439901.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      afterImage: "https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      description: "Transformação completa da sala de estar, removendo poeira e organizando o ambiente."
-    },
-    {
       title: "Limpeza Pós-Obra",
-      beforeImage: "https://images.pexels.com/photos/5582597/pexels-photo-5582597.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      afterImage: "https://images.pexels.com/photos/1668860/pexels-photo-1668860.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      beforeImage: "src/assets/pos_obra_sujo.png",
+      afterImage: "src/assets/pos_obra_limpo.png",
       description: "Remoção de resíduos de obra e limpeza profunda para deixar o ambiente pronto para uso."
     },
     {
       title: "Limpeza de Escritório",
-      beforeImage: "https://images.pexels.com/photos/3742763/pexels-photo-3742763.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      afterImage: "https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      beforeImage: "src/assets/empresarial_sujo.png",
+      afterImage: "src/assets/empresarial_limpo.png",
       description: "Higienização completa do ambiente corporativo, garantindo um espaço saudável e produtivo."
     }
   ];
@@ -77,7 +71,7 @@ const BeforeAfter: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex justify-center gap-8 flex-wrap">
           {transformations.map((transformation, index) => (
             <BeforeAfterCard 
               key={index}

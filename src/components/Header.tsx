@@ -28,9 +28,18 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className={`text-2xl font-bold ${isScrolled ? 'text-blue-600' : 'text-white'}`}>
-            CWB Limpeza
-          </h1>
+          <a 
+        href="/" 
+        className="flex items-center space-x-2"
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = '/';
+        }}
+          >
+        <h1 className={`text-2xl font-bold ${isScrolled ? 'text-blue-600' : 'text-white'}`}>
+          CWB Limpeza
+        </h1>
+          </a>
         </div>
 
         {/* Desktop Navigation */}

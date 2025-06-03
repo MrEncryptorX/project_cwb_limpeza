@@ -4,12 +4,12 @@ import { Check, Star } from 'lucide-react';
 
 const About: React.FC = () => {
   const benefits = [
-    'Equipe uniformizada e especializada',
-    'Soluções inovadoras e tecnologia de ponta',
-    'Produtos sustentáveis e equipamentos profissionais',
+    'Equipe especializada em limpeza pós-obra e empresarial',
     'Atendimento ágil, transparente e personalizado',
+    'Produtos sustentáveis e equipamentos profissionais',
     'Garantia de segurança, ética e confiabilidade',
-    'Resultados superiores, monitoramento e feedback contínuo'
+    'Resultados superiores e monitoramento de qualidade',
+    'Soluções sob medida para cada cliente'
   ];
 
   return (
@@ -27,8 +27,8 @@ const About: React.FC = () => {
               <div className="absolute -bottom-8 -right-8 flex items-center gap-3 bg-blue-700 text-white p-4 rounded-xl shadow-lg hidden md:flex">
                 <Star className="text-yellow-400" />
                 <div>
-                  <p className="font-bold text-lg">Startup em ascensão 🚀</p>
-                  <p className="text-sm opacity-80">Reconhecida por inovação no segmento</p>
+                  <p className="font-bold text-lg">Especialistas em Limpeza Profissional</p>
+                  <p className="text-sm opacity-80">Excelência em pós-obra e ambientes corporativos</p>
                 </div>
               </div>
               <div className="absolute -top-6 left-6 bg-green-600 text-white p-2 rounded-lg shadow">★ 98% satisfação</div>
@@ -40,13 +40,14 @@ const About: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Sobre a CWB Limpeza
             </h2>
-            <p className="text-blue-700 font-semibold mb-2 text-lg uppercase tracking-wide">STARTUP INOVADORA E CONFIÁVEL</p>
+            <p className="text-blue-700 font-semibold mb-2 text-lg uppercase tracking-wide">REFERÊNCIA EM LIMPEZA PÓS-OBRA E EMPRESARIAL</p>
             <p className="text-gray-700 text-lg mb-4">
-              A CWB Limpeza é uma startup em rápido crescimento, que vem transformando o mercado de limpeza residencial, pós-obra e empresarial em Curitiba e região.
-              Com tecnologia, processos inteligentes e uma equipe altamente capacitada, entregamos máxima eficiência, agilidade e sustentabilidade.
+              A CWB Limpeza é especialista em serviços de limpeza pós-obra e empresarial em Curitiba e região. 
+              Nossa equipe altamente treinada garante ambientes impecáveis, seguros e prontos para uso, seja após reformas ou para o dia a dia corporativo.
             </p>
             <p className="text-gray-600 mb-6">
-              Usamos metodologias modernas de controle de qualidade, escutamos nossos clientes e buscamos sempre superar expectativas. Nosso compromisso: ambientes impecáveis e a tranquilidade do cliente em cada etapa.
+              Trabalhamos com processos modernos, produtos sustentáveis e foco total na satisfação do cliente. 
+              Nosso compromisso é entregar eficiência, agilidade e confiança em cada projeto.
             </p>
             
             {/* Benefícios */}
@@ -64,14 +65,14 @@ const About: React.FC = () => {
             {/* Depoimento de cliente destaque */}
             <div className="bg-gray-50 border-l-4 border-blue-600 p-4 mb-8 rounded">
               <p className="italic text-gray-800">
-                “A CWB Limpeza superou nossas expectativas trazendo inovação, respeito ao meio ambiente e um atendimento diferenciado. Recomendo de olhos fechados!”
+                “Contratei a CWB Limpeza para o pós-obra da minha empresa e fiquei impressionada com o resultado e profissionalismo. Recomendo!”
               </p>
               <p className="text-right text-gray-500 font-medium mt-2">– Juliana M., empresária</p>
             </div>
             
             {/* CTA principal */}
             <a 
-              href="https://wa.me/5541991491285?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20limpeza." 
+              href="https://wa.me/5541991491285?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20limpeza%20pós-obra%20ou%20empresarial." 
               className="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-lg transition-all shadow-lg text-lg"
             >
               Solicite um orçamento personalizado

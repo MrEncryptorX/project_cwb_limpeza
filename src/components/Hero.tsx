@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             Sua casa e empresa brilhando como nunca
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8">
-            Serviços especializados em limpeza residencial, pós-obra e empresarial em Curitiba e região.
+            Serviços especializados em pós-obra e empresarial em Curitiba e região.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a 

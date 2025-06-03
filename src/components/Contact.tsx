@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
                     <p className="mt-1">cwblimpeza@cwblimpeza.com.br</p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="flex-shrink-0 mt-1">
                     <MapPin size={20} className="text-blue-300" />
                   </div>
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                       Curitiba - PR, 80000-000
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="mt-10">
                 <h4 className="font-medium mb-4">Horário de Atendimento</h4>

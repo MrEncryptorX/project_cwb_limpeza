@@ -17,13 +17,13 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">CWB Limpeza</h3>
             <p className="text-gray-400 mb-4">
               Sua solução completa em serviços de limpeza. Atendemos 
-              residências, empresas e obras em Curitiba e região.
+              empresas e obras em Curitiba e região.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/cwblimpeza/" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -35,11 +35,6 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Serviços</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="#services" className="text-gray-400 hover:text-white transition-colors">
-                  Limpeza Residencial
-                </a>
-              </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-white transition-colors">
                   Limpeza Pós-Obra
@@ -99,8 +94,8 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-gray-400">
               <li>(41) 99149-1285</li>
               <li>cwblimpeza@cwblimpeza.com.br</li>
-              <li>Rua Exemplo, 1234 - Bairro</li>
-              <li>Curitiba - PR, 80000-000</li>
+              {/* <li>Rua Exemplo, 1234 - Bairro</li>
+              <li>Curitiba - PR, 80000-000</li> */}
             </ul>
           </div>
         </div>

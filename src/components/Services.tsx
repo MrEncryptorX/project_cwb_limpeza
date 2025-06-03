@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Building, Hammer } from 'lucide-react';
+import { Building, Hammer } from 'lucide-react';
 
 interface ServiceCardProps {
   title: string;
@@ -10,19 +10,20 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, imageUrl }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-xl transform hover:-translate-y-1">
+    // Alterado max-w-md para max-w-lg para deixar o card mais largo
+    <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-xl transform hover:-translate-y-1 max-w-lg">
       <div 
         className="h-48 bg-cover bg-center" 
         style={{ backgroundImage: `url(${imageUrl})` }}
       ></div>
-      <div className="p-6">
-        <div className="flex items-center mb-4">
-          <div className="p-2 bg-blue-100 rounded-full mr-3">
+      <div className="p-10"> 
+        <div className="flex items-center mb-2">
+          <div className="p-2 bg-blue-100 rounded-full mr-2">
             {icon}
           </div>
-          <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+          <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
         </div>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 text-sm">{description}</p>
       </div>
     </div>
   );
@@ -39,13 +40,8 @@ const Services: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ServiceCard 
-            title="Limpeza Residencial" 
-            description="Limpeza completa para casas e apartamentos, incluindo áreas comuns em condomínios. Deixamos sua casa impecável e aconchegante."
-            icon={<Home size={24} className="text-blue-600" />}
-            imageUrl="https://images.pexels.com/photos/4108771/pexels-photo-4108771.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          />
+        {/* Alterado max-w-6xl para max-w-7xl para acomodar os cards mais largos lado a lado */}
+        <div className="flex flex-wrap justify-center items-center gap-8 max-w-7xl mx-auto">
           <ServiceCard 
             title="Limpeza Pós-Obra" 
             description="Remoção de resíduos de construção, limpeza profunda e preparação do ambiente após reformas ou construções."
