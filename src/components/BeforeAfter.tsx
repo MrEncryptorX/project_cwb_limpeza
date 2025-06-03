@@ -49,14 +49,14 @@ const BeforeAfter: React.FC = () => {
   const transformations = [
     {
       title: "Limpeza Pós-Obra",
-      beforeImage: "public/assets/pos_obra_sujo.png",
-      afterImage: "public/assets/pos_obra_limpo.png",
+      beforeImage: "/assets/pos_obra_sujo.png",
+      afterImage: "/assets/pos_obra_limpo.png",
       description: "Remoção de resíduos de obra e limpeza profunda para deixar o ambiente pronto para uso."
     },
     {
       title: "Limpeza de Escritório",
-      beforeImage: "/public/assets/empresarial_sujo.png",
-      afterImage: "/public/assets/empresarial_limpo.png",
+      beforeImage: "/assets/empresarial_sujo.png",
+      afterImage: "/assets/empresarial_limpo.png",
       description: "Higienização completa do ambiente corporativo, garantindo um espaço saudável e produtivo."
     }
   ];
