@@ -55,8 +55,8 @@ const BeforeAfter: React.FC = () => {
     },
     {
       title: "Limpeza de Escritório",
-      beforeImage: "public/assets/empresarial_sujo.png",
-      afterImage: "public/assets/empresarial_limpo.png",
+      beforeImage: "/public/assets/empresarial_sujo.png",
+      afterImage: "/public/assets/empresarial_limpo.png",
       description: "Higienização completa do ambiente corporativo, garantindo um espaço saudável e produtivo."
     }
   ];
