@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/Logo.png';
+import Logo from '/public/assets/Logo.png';
 import { Check, Star } from 'lucide-react';
 
 const About: React.FC = () => {
